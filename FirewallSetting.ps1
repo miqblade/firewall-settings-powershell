@@ -19,9 +19,10 @@ foreach ($port in $portsToBlock) {
                             -Protocol $port.Protocol `
                             -Action Block `
                             -Profile Any
-        Write-Host "Правило '$($port.Name)' создано и порт $($port.Port) заблокирован."
+        Write-Host "Rule '$($port.Name)' created and ported $($port.Port) blocked."
     }
     else {
-        Write-Host "Правило '$($port.Name)' уже существует."
+        Write-Host "Rule '$($port.Name)' already exists."
     }
 }
+
