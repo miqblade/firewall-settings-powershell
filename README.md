@@ -1,4 +1,4 @@
-#Firewall-settings-powershell
+# Firewall-settings-powershell
 
 if you want to add your own rule,
 you can do it by adding a new entry to the $portsToBlock array,
