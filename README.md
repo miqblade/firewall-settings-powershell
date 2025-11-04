@@ -4,7 +4,7 @@ if you want to add your own rule,
 you can do it by adding a new entry to the $portsToBlock array,
 using the same structure — Port, Protocol (TCP/UDP), and Name.
 
-'''
+```
 $portsToBlock = @(
     @{Port=445; Protocol="TCP"; Name="Block SMB Port 445"},
     @{Port=137; Protocol="UDP"; Name="Block NetBIOS Port 137"},
@@ -16,12 +16,12 @@ $portsToBlock = @(
     @{Port=3389; Protocol="TCP"; Name="Block RDP Port 3389"},
     @{Port=135; Protocol="TCP"; Name="Block RPC Port 135"}    
 )
-'''
+```
 
 For example:
 
-'''
+```
 $portsToBlock = @(
     @{Port=80; Protocol="TCP"; Name="Block HTTP Port 80"},
 )
-'''
+```
